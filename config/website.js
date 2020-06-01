@@ -7,10 +7,17 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription: 'About different cool things with React & Figma',
+  siteKeywords: ['React Figma JAMStack UIKit'],
   author: 'Author', // Author for schemaORGJSONLD
+  minibio: `
+  <strong>egghead</strong> is the premier place on the internet for 
+  experienced developers to enhance their skills and stay current
+  in the fast-faced field of web development.
+`,
   organization: 'figma-react-ui-kit.com',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
+  facebookAppID: '',
   userTwitter: '@figma-react-ui-kit', // Twitter Username
   ogSiteName: 'React, Figma & JAMStack', // Facebook Site Name
   ogLanguage: 'en_US',
