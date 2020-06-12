@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { bpMaxSM } from '../lib/breakpoints'
 import SubscribeForm from './Forms/Subscribe'
-import { Twitter, GitHub } from './Social'
+import { GitHub } from './Social'
 import Container from './Container'
 
 const Footer = ({ author, noSubscribeForm }) => (
@@ -38,7 +38,7 @@ const Footer = ({ author, noSubscribeForm }) => (
           {author && `${author} \u00A9 ${new Date().getFullYear()}`}
         </div>
         <div>
-          <Twitter />
+          {/*} <Twitter />*/}
           <GitHub />
         </div>
       </div>

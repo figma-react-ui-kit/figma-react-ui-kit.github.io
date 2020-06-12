@@ -6,13 +6,11 @@ module.exports = {
   siteUrl: 'https://figma-react-ui-kit.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
-  siteDescription: 'About different cool things with React & Figma',
+  siteDescription: 'Interesting things with React & Figma',
   siteKeywords: ['React Figma JAMStack UIKit'],
-  author: 'Author', // Author for schemaORGJSONLD
+  author: 'Anton K.', // Author for schemaORGJSONLD
   minibio: `
-  <strong>egghead</strong> is the premier place on the internet for 
-  experienced developers to enhance their skills and stay current
-  in the fast-faced field of web development.
+  <strong>Anton K.</strong>
 `,
   organization: 'figma-react-ui-kit.com',
 
@@ -28,7 +26,7 @@ module.exports = {
   backgroundColor: '#2b2e3c',
 
   // Social component
-  twitter: 'https://twitter.com/',
+  twitter: '',
   twitterHandle: '@',
   github: 'https://github.com/figma-react-ui-kit/',
   linkedin: '',

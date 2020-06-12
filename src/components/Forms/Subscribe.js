@@ -99,6 +99,7 @@ class SignUp extends React.Component {
                     align-items: flex-end;
                     button {
                       margin-left: 10px;
+                      margin-top: 0.5rem;
                     }
                     .field-error {
                       display: block;
@@ -108,6 +109,9 @@ class SignUp extends React.Component {
                     input,
                     label {
                       width: 100%;
+                    }
+                    label {
+                      margin-bottom: 0;
                     }
                     ${bpMaxSM} {
                       flex-direction: column;
@@ -187,8 +191,9 @@ class SignUp extends React.Component {
                   </button>
                 </Form>
               )}
-              {submitted &&
-                !isSubmitting && <PostSubmissionMessage response={response} />}
+              {submitted && !isSubmitting && (
+                <PostSubmissionMessage response={response} />
+              )}
               {errorMessage && <div>{errorMessage}</div>}
             </>
           )}

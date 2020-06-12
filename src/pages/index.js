@@ -8,7 +8,7 @@ import { useTheme } from 'components/Theming'
 import Container from 'components/Container'
 import { rhythm } from '../lib/typography'
 
-const Hero = () => {
+const Hero = ({ data: description }) => {
   const theme = useTheme()
   return (
     <section
@@ -36,7 +36,7 @@ const Hero = () => {
             max-width: ${rhythm(15)};
           `}
         >
-          Your blog says the things you want to say.
+          {description}
         </h1>
       </Container>
       <div
@@ -56,9 +56,10 @@ const Description = styled.p`
 
 export default function Index({ data: { site, allMdx } }) {
   const theme = useTheme()
+
   return (
     <Layout site={site}>
-      <Hero />
+      <Hero data={site.siteMetadata.description} />
       <Container
         css={css`
           padding-bottom: 0;
@@ -113,6 +114,7 @@ export const pageQuery = graphql`
       ...site
       siteMetadata {
         title
+        description
       }
     }
     allMdx(
